@@ -15,7 +15,7 @@ import os
 os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "reconnect;1|reconnect_streamed;1|timeout;60000000"
 
 if not cap.isOpened():
-    print("Can't open stream nya...")
+    print("Can't open stream...")
     exit()
 
 # Get original size once
@@ -55,3 +55,4 @@ while True:
 cap.release()
 
 cv2.destroyAllWindows()
+
