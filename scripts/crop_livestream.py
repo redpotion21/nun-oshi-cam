@@ -46,11 +46,12 @@ while True:
     cropped = frame[y:y+crop_h, x:x+crop_w]
     
     # Show only cropped part
-    cv2.imshow("Ren-chan's Clipped Live ♡", cropped)
+    cv2.imshow("Live screen", cropped)
     
     # Press 'q' to quit
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
 cap.release()
+
 cv2.destroyAllWindows()
